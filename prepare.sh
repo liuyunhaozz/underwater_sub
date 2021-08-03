@@ -1,4 +1,3 @@
-#!/bin/bash
 
 cd ~/underwater_sub
 unzip -d . data.zip 

@@ -1,4 +1,3 @@
-#!/bin/bash
 conda activate my_mmcv
 cd ~/underwater_sub
 chmod +x tools/dist_test.sh
