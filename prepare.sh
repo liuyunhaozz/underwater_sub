@@ -1,6 +1,8 @@
 #!/bin/bash
 
-cd ~/underwater_sub
+cd ~/underwater_sub/data
+unzip -d . test-B-image.zip 
+cd ..
 mkdir results
 mkdir submit
 
