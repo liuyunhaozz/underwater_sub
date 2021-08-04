@@ -1,4 +1,4 @@
-conda init bash
+source activate
 conda activate my_mmcv
 cd /userhome/underwater_sub
 python ./tools/generate_testB_json.py
