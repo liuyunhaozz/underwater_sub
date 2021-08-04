@@ -212,7 +212,6 @@ test_cfg = dict(
         nms=dict(type='soft_nms', iou_threshold=0.5, min_score=0.0001), max_per_img=300))
 
 dataset_type = 'UnderwaterOpticsDataset'
-data_root = './data/'
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
 train_pipeline = [
@@ -253,21 +252,21 @@ data = dict(
     workers_per_gpu=2,
     train=dict(
         type=dataset_type,
-        ann_file=data_root + 'annotations/train_c1.json',
+        ann_file='annotations/train_c1.json',
         img_prefix=data_root + 'image/',
         pipeline=train_pipeline,
         filter_empty_gt=True),
     val=dict(
         type=dataset_type,
-        ann_file=data_root + 'annotations/train_c1.json',
+        ann_file='annotations/train_c1.json',
         img_prefix=data_root + 'image/',
         pipeline=train_pipeline),
     test=dict(
         type=dataset_type,
         #ann_file=data_root + 'annotations/testA.json',
         #img_prefix=data_root + 'test-A-image/',
-        ann_file=data_root + 'annotations/testB.json',
-        img_prefix=data_root + 'test-B-image/',
+        ann_file='annotations/testB.json',
+        img_prefix='../test-B-image/',
         pipeline=test_pipeline))
 
 evaluation = dict(interval=1, metric='bbox')

@@ -10,10 +10,10 @@ from PIL import Image
 
 if __name__ == '__main__':
     print("generate testB json...")
-    with open('data/annotations/train.json', 'r') as f:
+    with open('annotations/train.json', 'r') as f:
         categories = json.load(f)['categories']
-    img_root = './data/test-B-image/'
-    save_path_root = "./data/annotations/"
+    img_root = '../test-B-image/'
+    save_path_root = "./annotations/"
     images = []
     annotations = []
     image_id = 1
