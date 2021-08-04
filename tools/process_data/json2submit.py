@@ -6,7 +6,7 @@ import numpy as np
 
 raw_anno_file = './annotations/testB.json'
 result_file = 'results/testB.bbox.json'
-submit_path = '../answerB/testB.csv'
+submit_path = '../answerB/answerB.csv'
 with open(raw_anno_file, 'r') as f:
     annos = json.load(f)
 imageid2name = {}
