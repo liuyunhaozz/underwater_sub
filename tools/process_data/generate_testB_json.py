@@ -10,8 +10,8 @@ from PIL import Image
 
 if __name__ == '__main__':
     print("generate testB json...")
-    with open('annotations/train.json', 'r') as f:
-        categories = json.load(f)['categories']
+    
+    categories = [{'name': 'holothurian', 'id': 1}, {'name': 'echinus', 'id': 2}, {'name': 'scallop', 'id': 3}, {'name': 'starfish', 'id': 4}]
     img_root = '../test-B-image/'
     save_path_root = "./annotations/"
     images = []
