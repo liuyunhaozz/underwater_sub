@@ -1,4 +1,3 @@
-#!/bin/bash
 conda activate my_mmcv
 cd /userhome/underwater_sub
 python ./tools/generate_testB_json.py
